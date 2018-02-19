@@ -110,7 +110,7 @@ if __name__ == "__main__":
     
     if sys.stdin.isatty():
         parser.print_usage()
-        print "for more help use --help"
+        print("for more help use --help")
         sys.exit(1)
     run(load_stream(sys.stdin), options)
 
