@@ -56,7 +56,7 @@ def run(input_stream, options):
             total += 1
     
     if not data:
-        print "Error: no data"
+        print("Error: no data")
         sys.exit(1)
     
     max_length = max([len(key) for key in data.keys()])
@@ -66,7 +66,7 @@ def run(input_stream, options):
     scale = int(math.ceil(float(max_value) / value_characters))
     scale = max(1, scale)
     
-    print "# each " + options.dot + " represents a count of %d. total %d" % (scale, total)
+    print("# each " + options.dot + " represents a count of %d. total %d" % (scale, total))
     
     if options.sort_values:
         data = [[value, key] for key, value in data.items()]

@@ -1,11 +1,11 @@
 data_hacks
 ==========
 
-Command line utilities for data analysis
+Command line utilities for data analysis. Updated for Python 3.
 
 Installing: `pip install data_hacks`
 
-Installing from github `pip install -e git://github.com/bitly/data_hacks.git#egg=data_hacks`
+Installing from github `pip install -e git://github.com/miku/data_hacks.git#egg=data_hacks`
 
 Installing from source `python setup.py install`
 

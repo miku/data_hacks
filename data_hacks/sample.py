@@ -20,6 +20,8 @@ Pass through a sampled percentage of data
 https://github.com/bitly/data_hacks
 """
 
+from __future__ import print_function
+
 import sys
 import random
 from optparse import OptionParser
@@ -57,9 +59,9 @@ if __name__ == "__main__":
     try:
         sample_rate = get_sample_rate(sys.argv[-1])
     except ValueError, e:
-        print >>sys.stderr, e
+        print(e, file=sys.stderr)
         parser.print_usage()
         sys.exit(1)
     if options.verbose:
-        print >>sys.stderr, "Sample rate is %d%%" % sample_rate 
+        print("Sample rate is %d%%" % sample_rate, file=sys.stderr)
     run(sample_rate)
